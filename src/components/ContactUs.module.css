@@ -1,0 +1,132 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.1);
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  color: #1e293b;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 10px 0 32px;
+  text-align: center;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  background: #f8fafc;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.input:focus,
+.textarea:focus {
+  background: #ffffff;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.inputError {
+  border-color: #ef4444;
+}
+
+.error {
+  margin-top: 6px;
+  color: #ef4444;
+  font-size: 13px;
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.successMessage {
+  margin-bottom: 20px;
+  padding: 13px 15px;
+  border: 1px solid #86efac;
+  border-radius: 10px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 14px;
+  }
+
+  .formWrapper {
+    padding: 26px 20px;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+}
